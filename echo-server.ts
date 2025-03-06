@@ -6,11 +6,8 @@ server.on('error', (e: Error) => { throw e })
 server.listen({ host: '127.0.0.1', port: 2025 })
 
 function handleNewConnection(socket: Socket): void {
-    console.log(
-        'new connection', {
-            socket,
-            address: socket.remoteAddress,
-            port: socket.remotePort
-        }
-    )
+    const echoData = (data: Buffer): void => {
+        socket.write(data)
+    }
+    socket.on("data", echoData);
 }
