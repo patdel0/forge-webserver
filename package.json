@@ -1,5 +1,8 @@
 {
   "type": "module",
+  "scripts": {
+    "start": "tsx echo-server.ts"
+  },
   "devDependencies": {
     "@types/node": "^22.13.9",
     "tsx": "^4.19.3",
