@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "start": "tsx echo-server.ts"
+    "start": "tsx async-echo-server.ts"
   },
   "devDependencies": {
     "@types/node": "^22.13.9",
